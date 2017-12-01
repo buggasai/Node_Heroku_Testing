@@ -8,15 +8,6 @@ jwt = require('jsonwebtoken'),
 multer = require('multer'),
 //config = require('./config'),
 
-User = require('./api/models/userModel'),
-Owner = require('./api/models/ownerModel'),
-Building = require('./api/models/buildingModel'),
-Tenant = require('./api/models/tenantModel'),
-Vendor = require('./api/models/vendorModel'),
-Expense = require('./api/models/expenseModel'),
-Payment = require('./api/models/paymentModel'),
-
-
 bodyParser = require('body-parser');
 
 app.use(cors());
