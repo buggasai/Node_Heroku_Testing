@@ -2,6 +2,9 @@ var express = require('express'),
 app = express(),
 port = process.env.PORT || 3000,
 mongoose = require('mongoose'),
+morgan = require('morgan'),
+jwt = require('jsonwebtoken'),
+multer = require('multer'),
 
 
 bodyParser = require('body-parser');
