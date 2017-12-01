@@ -33,9 +33,6 @@ app.get("/", function (req, res) {
 res.send("Welcome to RMS Service!");
 });
 
-var routes = require('./api/routes/routes');
-routes(app);
-
 app.listen(port);
 
 console.log('RMS Restful service started at port: ' + port);
