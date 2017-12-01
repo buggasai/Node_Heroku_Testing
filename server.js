@@ -12,9 +12,9 @@ bodyParser = require('body-parser');
 
 app.use(cors());
 
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
 //mongoose.connect('mongodb://192.168.100.23/RMSDB');
-mongoose.connect('mongodb://heroku_lthp37qx:191big1n8ak2juueopo4nc8qcr@ds143245.mlab.com:43245/heroku_lthp37qx');
+//mongoose.connect('mongodb://heroku_lthp37qx:191big1n8ak2juueopo4nc8qcr@ds143245.mlab.com:43245/heroku_lthp37qx');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
