@@ -6,14 +6,15 @@ morgan = require('morgan'),
 jwt = require('jsonwebtoken'),
 multer = require('multer'),
 
-
 bodyParser = require('body-parser');
 
-//mongoose instance connection url connection
-//mongoose.Promise = global.Promise;
-//mongoose.connect('mongodb://192.168.100.23/Purdue');
-//mongoose.connect('mongodb://heroku_2ltn9472:j048m56fg083g3liqbvne6ur2o@ds155634.mlab.com:55634/heroku_2ltn9472');
-//mongoose.connect('mongodb://heroku_0bpgvlgv:sup2e44f3dap42h17rp4kus7f@ds019033.mlab.com:19033/heroku_0bpgvlgv');
+ 
+mongoose.Promise = global.Promise;
+//mongoose.connect('mongodb://192.168.100.23/RMSDB');
+mongoose.connect('mongodb://heroku_r9hn0jzn:echn9ckdip4644i79p2j4blun8@ds129796.mlab.com:29796/heroku_r9hn0jzn');
+
+
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
